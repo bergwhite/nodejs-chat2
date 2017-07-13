@@ -62,7 +62,8 @@ a {
 }
 /* 聊天室的名称 */
 .chat-name {
-  background-color: rgb(33,150,243);
+  background-color: #2196f3;
+  color: white;
   padding: 20px;
 }
 .chat {
@@ -79,7 +80,8 @@ a {
   padding: 10px 20px;
 }
 .chat-info-confirm {
-  background-color: rgb(68,138,255);
+  background-color: #448aff;
+  color: white;
   padding: 5px;
   cursor: pointer;
 }
@@ -177,8 +179,8 @@ a {
   text-align: center;
   line-height: 80px;
   cursor: pointer;
-  background-color: #EFEFEF;
-  color: black;
+  background-color: #2196f3;
+  color: white;
 }
 .info-tab-cut {
   overflow: hidden;
