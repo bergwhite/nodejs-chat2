@@ -293,9 +293,10 @@ nodejsChat.method = {
         }
       }).then(function(res) {
         var tm = nodejsChat.method.getTime(new Date())
-        var leftBubble = nodejsChat.method.renderBubbleMsg('left', nodejsChat.data.robot.nick, tm,  res.data.text, nodejsChat.data.robot.img)
+        var tmParse = nodejsChat.method.parseTime(tm)
+        var leftBubble = nodejsChat.method.renderBubbleMsg('left', nodejsChat.data.robot.nick, tmParse,  res.data.text, nodejsChat.data.robot.img)
         nodejsChat.method.insertToList(chatMsgList, 'li', leftBubble)
-        socket.emit('send message req', time, nodejsChat.data.roomID , {user: nodejsChat.data.robot.nick,tm: time, msg: res.data.text, img: nodejsChat.data.robot.img})
+        socket.emit('send message req', tm, nodejsChat.data.roomID , {user: nodejsChat.data.robot.nick,time: tm, msg: res.data.text, img: nodejsChat.data.robot.img})
         nodejsChat.method.toBottom()
       }).catch(function(err) {
         console.log(err)
