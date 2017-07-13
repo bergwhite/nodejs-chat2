@@ -292,7 +292,7 @@ a {
 /* 全局泡泡 内容 */
 .bubble-ctx {
   word-break: break-all;
-  width: 60%;
+  width: 320px;
 }
 .bubble-ctx-border {
   border: 1px solid #00bcd4;
@@ -327,4 +327,8 @@ a {
 .bubble-right .bubble-info-time {
   float: left;
   padding-left: 16px;
+}
+.bubble-right {
+  width: 360px;
+  margin-left: 198px;
 }
