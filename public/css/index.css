@@ -268,8 +268,8 @@ a {
 }
 /* 左边泡泡 内容 */
 .bubble-right > .bubble-ctx {
-  margin-right: 20px;
-  float: right;
+  margin-right: 60px;
+  float: left;
 }
 /* 右边泡泡 三角形 */
 .bubble-right .bubble-ctx-show::before {
@@ -331,6 +331,6 @@ a {
   padding-left: 16px;
 }
 .bubble-right {
-  width: 360px;
-  margin-left: 198px;
+  width: 380px;
+  margin-left: 158px;
 }

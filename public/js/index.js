@@ -9,6 +9,22 @@ var chatMoreBox = document.getElementsByClassName('chat-more-box')[0]
 var inputRadioSex = document.getElementsByClassName('input-radio-sex')
 var userImgChoose = document.getElementsByClassName('user-img-choose')[0]
 
+// 判断否是移动端
+function isMobile() {
+  const checkList = ['Android', 'iPhone', 'SymbianOS', 'Windows Phone', 'iPad', 'iPod']
+  let checkState = false
+  checkList.map((e) => {
+    if(navigator.userAgent.indexOf(e) !== -1) checkState = true
+  })
+  return checkState
+}
+
+// 是移动端则跳转
+if (isMobile()) {
+  const PCPage = document.location.origin.replace('8088', '8086')
+  document.location = PCPage
+}
+
 // 为socket.io设置别名
 var socketHostName = document.location.hostname
 var socketURI = 'http://' +  socketHostName + ':8089/'
